@@ -1,0 +1,24 @@
+{
+    "name": "vuhcmus/pagesmanager",
+    "description": "Laravel Pages Manager for reuse purpose.",
+    "type": "Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Nguyen",
+            "email": "tranvu.khtn08@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vuhcmus\\Pagesmanager\\ServiceProvider"
+            ],
+            "aliases": {
+                "Pagesmanager": "Vuhcmus\\Pagesmanager\\Facade"
+            }
+        }
+    },
+}
