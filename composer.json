@@ -14,7 +14,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vuhcmus\\Pagesmanager\\ServiceProvider"
+                "Vuhcmus\\Pagesmanager\\PagesManagerServiceProvider"
             ],
             "aliases": {
                 "Pagesmanager": "Vuhcmus\\Pagesmanager\\Facade"
