@@ -21,5 +21,10 @@
             }
         }
     },
+    "autoload": {
+        "psr-4": {
+            "Vuhcmus\\Pagesmanager\\": "src"
+        }
+    },
     "version": "1.0"
 }
