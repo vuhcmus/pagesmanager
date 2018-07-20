@@ -20,5 +20,6 @@
                 "Pagesmanager": "Vuhcmus\\Pagesmanager\\Facade"
             }
         }
-    }
+    },
+    "version": "1.0"
 }
