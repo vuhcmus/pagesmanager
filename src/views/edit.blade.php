@@ -1,4 +1,4 @@
-@extends('admin.master')
+@extends('pagesmanager::master')
 @section('content')
     <br>
     <div class="card">
