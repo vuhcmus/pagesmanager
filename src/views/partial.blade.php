@@ -21,5 +21,5 @@
 
 <div class="form-group">
     <label class="col-form-label">Body</label>
-    <textarea class="form-control" name="body" cols="30" rows="10" value="{{old('body', isset($page)?$page->body:'')}}"></textarea>
+    <textarea class="form-control" name="body" cols="30" rows="10">{{old('body', isset($page)?$page->body:'')}}</textarea>
 </div>
