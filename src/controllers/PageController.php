@@ -107,8 +107,10 @@ class PageController extends Controller
      * @param  \App\Page $page
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Page $page)
+    public function destroy($id)
     {
-        //
+        $page = $this->model->find($id);
+        $page->delete();
+        return redirect('pages');
     }
 }
