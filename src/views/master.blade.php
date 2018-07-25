@@ -50,5 +50,13 @@
     </section>
 </section>
 <script type="text/javascript" src="{{asset('vendor/pagesmanager/main.js')}}"/>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        $('.delete').click(function () {
+            var _id = $(this).attr('data-id');
+            $('form#delete'+_id).submit();
+        });
+    });
+</script>
 </body>
 </html>
