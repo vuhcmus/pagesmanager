@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="{{asset('vendor/pagesmanager/main.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
 <section id="nav">
@@ -32,10 +32,6 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                 </ul>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </nav>
     </section>
@@ -49,12 +45,16 @@
         </div>
     </section>
 </section>
-<script type="text/javascript" src="{{asset('vendor/pagesmanager/main.js')}}"/>
-<script type="text/javascript">
+<script src="{{asset('js/app.js')}}"></script>
+<script type="text/javascript" >
     jQuery(document).ready(function () {
-        $('.delete').click(function () {
-            var _id = $(this).attr('data-id');
-            $('form#delete'+_id).submit();
+        console.log('aaa');
+        jQuery('.delete').click(function (e) {
+            e.preventDefault();
+            if(confirm('Are you sure?')){
+                var _id = jQuery(this).attr('data-id');
+                jQuery('#delete-'+_id).submit();
+            }
         });
     });
 </script>
